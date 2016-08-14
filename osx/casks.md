@@ -1,0 +1,15 @@
+google-chrome
+1password
+alfred
+bartender
+dash
+ember
+dropbox
+iterm2
+postico
+polymail
+sketch
+sketch-toolbox
+slack
+spotify
+vlc

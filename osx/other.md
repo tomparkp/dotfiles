@@ -1,0 +1,12 @@
+xcode
+window-tidy
+wunderlist
+vmware-fusion
+sip
+screens
+rightfont
+pixelmator
+pocket
+paw
+kaleidoscope
+harvest

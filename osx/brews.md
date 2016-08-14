@@ -1,0 +1,15 @@
+brew-cask
+heroku-toolbelt
+vim
+tmux
+imagemagick
+openssl
+postgresql
+sqlite
+zsh
+git
+git-lfs
+rbenv
+node
+python
+zplug

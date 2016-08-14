@@ -1,0 +1,20 @@
+"==================================================
+"                     ~vimrc~
+"===================================================
+" Author:		Tom Piarulli
+" Source:		https://github.com/tompiarulli/dotfiles
+"
+" Individual config files split into files in
+" configs folder. Vim-plug to manage plugins via
+" bundles.vim file.
+" --------------------------------------------------
+
+" Load plugins
+source ~/.dotfiles/vim/bundles.vim
+
+" Load remaining config files
+for file in split(glob('~/.dotfiles/vim/configs/*'), '\n')
+  if filereadable(file)
+    execute 'source' file
+  endif
+endfor

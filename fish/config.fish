@@ -1,22 +1,25 @@
 # Aliases
-function l
-  ls -o
+alias l "set_color purple; ls -1 -p | grep --colour=never '/'; set_color normal; ls -1 -p | grep -v '/'; echo"
+alias la "ls -la"
+alias config "nvim ~/.config/fish/config.fish"
+alias dotfiles "cd ~/.dotfiles"
+alias src "source ~/.config/fish/config.fish"
+alias vim "nvim"
+alias e "nvim"
+alias c "clear"
+alias u "cd .."
+
+# cd then l
+function m
+	cd $argv; l
 end
 
-function la
-  ls -la
-end
-
-function config
-  vim ~/.config/fish/config.fish
-end
-
-function dotfiles
-  cd ~/.dotfiles
-end
+# Prompt
+set chain_prompt_glyph \/
 
 # Homebrew
 set -x PATH $PATH /usr/local/bin
+set -x PATH $PATH /usr/local/sbin
 
 # Android SDK
 set -x ANDROID_HOME ~/Library/Android/sdk

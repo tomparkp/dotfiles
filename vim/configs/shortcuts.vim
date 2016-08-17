@@ -28,7 +28,31 @@ nmap <leader>src :source $MYVIMRC<cr>
 imap jj <esc>
 
 " Quicker window movement
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-h> <C-w>h
-nnoremap <C-l> <C-w>l
+nnoremap <tab> <C-w><C-p>
+nnoremap \j <C-w>j
+nnoremap \k <C-w>k
+nnoremap \h <C-w>h
+nnoremap \l <C-w>l
+
+" Save from insert mode
+inoremap <C-s> <esc>:w<cr>i
+inoremap \s <esc>:w<cr>i
+nnoremap <C-s> :w<cr>
+
+" Quick saving and quitting
+nnoremap <leader>w :w<cr>
+nnoremap <leader>q :wq<cr>
+nnoremap <leader>x :q!<cr>
+
+" Quick ./ to clear search
+nmap <silent> ./ :let@/=""<cr>
+
+" FZF Commaands
+nmap <leader>o :Files<cr>
+nmap <leader>f :Ag
+nmap <leader>h :History<cr>
+nmap <leader>s :Snippets<cr>
+nmap <leader>g :GFiles<cr>
+
+" Quick open shortcuts
+nmap <leader>m :e ~/.dotfiles/vim/configs/shortcuts.vim<cr>

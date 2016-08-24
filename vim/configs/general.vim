@@ -7,12 +7,10 @@ set autoread										" Load file from disk, ie for git reset
 set lazyredraw									" Don't redraw while executing macros
 set backspace=indent,eol,start	" Better backspacing
 set history=1000								" Remember last 1000 commands
-set scrolloff=2									" Keep 2 lines below cursor
 set tabstop=2										" Two spaces per tab
 set shiftwidth=2								"	^
 set softtabstop=2								" ^
 set secure											" Limit what modelines and autocmds do
-set autowrite										" Autowrite when I take any action
 set number											" Show line numbers
 set modelines=1									" Allow rcfiles to be recognized as vim files
 set nobackup										" Disable backups and swapfiles
@@ -23,5 +21,8 @@ set linebreak										" only wrap at certain characters
 set nolist											" disable linebreak except for <enter>
 set breakindent									" line wrap indentation
 set clipboard=unnamed						" share system clipboard
+set noshowmode									" hide mode indicator
+set noruler											" No ruler
+set laststatus=2
 filetype plugin indent on				" allow filetype specific functionality
 

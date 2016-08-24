@@ -2,12 +2,15 @@ export ZPLUG_HOME=/usr/local/opt/zplug
 source $ZPLUG_HOME/init.zsh
 
 # Plugins
-zplug "plugins/autojump", from:oh-my-zsh
-zplug "themes/kolo", from:oh-my-zsh
+zplug "plugins/brew", from:oh-my-zsh
+zplug "plugins/httpie", from:oh-my-zsh
+zplug "atweiden/fzf-extras", use:fzf-extras.sh
+zplug "b4b4r07/enhancd", use:init.sh
+zplug "plugins/osx", from:oh-my-zsh
+zplug "zsh-users/zsh-syntax-highlighting", nice:15
 zplug "zsh-users/zsh-history-substring-search"
 zplug "zsh-users/zsh-completions"
-zplug "zsh-users/zsh-autosuggestions"
-zplug "zsh-users/zsh-syntax-highlighting", nice:10
+zplug "robbyrussell/oh-my-zsh", use:"lib/*.zsh", nice:14
 
 # Install plugins if there are plugins that have not been installed
 if ! zplug check --verbose; then

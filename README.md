@@ -3,16 +3,15 @@ My config files for vim, zsh, etc. The goal to have a setup that can be easily r
 
 ## System Setup
 1. *(Recommended)* Install [Homebrew](http://brew.sh/)
-2. Install the programs you'd like (see below)
+2. Install the programs you'd like to use (see below)
 4. Clone this repo to `~/.dotfiles`
 5. Create symlinks from relevant dotfiles to the home directory (see below)
 
 ### Essential Programs
-- [vim](http://vim.org) - for text editing `brew install vim`
+- [zsh](http://www.zsh.org/) - shell
+- [zplug](https://github.com/zplug/zplug) - zsh plugin manager similar to vim-plug
+- [nvim](https://github.com/neovim/neovim) - for text editing
 - [vim-plug](https://github.com/junegunn/vim-plug) - plugin manager for vim
-- [fish](https://fishshell.com/) - my preferred shell, I also have prior files for zsh
-- [fisherman](https://github.com/fisherman/fisherman#install) - plugin manager for fish
-
 
 ### Example Symlinks
 The dotfiles need to be symlinked to the home directory to be picked up by their respective programs.
@@ -21,6 +20,8 @@ The dotfiles need to be symlinked to the home directory to be picked up by their
 ln -s ~/.dotfiles/vim/vimrc ~/.vimrc
 ln -s ~/.dotfiles/zsh/zshrc ~/.zshrc
 ln -s ~/.dotfiles/git/gitignore ~/.gitignore
-ln -s ~/.dotfiles/ag/agignore ~/.agignore
-ln -s ~/.dotfiles/fish/config.fish ~/.config/fish/config.fish
+ln -s ~/.dotfiles/git/gitconfig ~/.gitconfig
+mkdir ~/.config
+ln -s ~/.vim ~/.config/nvim
+ln -s ~/.vimrc ~/.config/nvim/init.vim
 ```

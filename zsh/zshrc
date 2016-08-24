@@ -2,7 +2,7 @@
 export PATH="usr/local/bin:$PATH"
 
 # Load plugins
-source ~/.dotfiles/zsh/bundles.zsh
+source ~/.dotfiles/zsh/plugins.zsh
 
 # Load config files
 for zsh_source in ~/.dotfiles/zsh/configs/*.zsh; do

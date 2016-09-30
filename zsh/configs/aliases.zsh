@@ -30,4 +30,3 @@ alias config="cd ~/.dotfiles/zsh/configs; v -c 'Files'"
 alias plugins="v ~/.dotfiles/zsh/plugins.zsh"
 alias src="source ~/.zshrc"
 alias dotfiles="cd ~/.dotfiles"
-
